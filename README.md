@@ -1,4 +1,4 @@
-# garbage_classification_frontend
+# nodule_detection_frontend
 
 > A Vue.js project
 
