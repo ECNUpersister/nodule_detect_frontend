@@ -90,14 +90,11 @@
             <br/>
             <br/>
             <img-upload @onUpload="uploadImg" ref="imgUpload" :beforeDetectUrl="beforeDetectUrl"></img-upload>
-            <el-tag for="beforeDetect" v-show="beforeDetectUrl" size="big">原始图像</el-tag>
             <img :src=beforeDetectUrl alt="" id="beforeDetect" class="dong-image">
-            <el-tag for="afterDetect" v-show="afterDetectUrl">检测结果</el-tag>
             <img :src=afterDetectUrl alt="" id="afterDetect" class="dong-image">
             <br/>
-            <br/>
-            <br/>
-            <br/>
+            <el-tag v-show="beforeDetectUrl" class="dong-tag1">原始图像</el-tag>
+            <el-tag v-show="afterDetectUrl" class="dong-tag2">检测结果</el-tag>
             <br/>
             <br/>
             <el-input
@@ -149,6 +146,16 @@ export default {
 <style scoped>
 .dong-image {
   max-width: 100%;
-  max-height: 200px;
+  max-height: 400px;
+}
+
+.dong-tag1 {
+  position: absolute;
+  left: 350px
+}
+
+.dong-tag2 {
+  position: absolute;
+  left: 750px
 }
 </style>
