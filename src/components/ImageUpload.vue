@@ -9,7 +9,7 @@
     multiple
     :limit="1">
     <el-button size="small" type="primary">点击上传</el-button>
-    <div slot="tip" class="el-upload__tip">只能上传PNG文件</div>
+    <div slot="tip" class="el-upload__tip">上传肺部CT图像</div>
   </el-upload>
 </template>
 
